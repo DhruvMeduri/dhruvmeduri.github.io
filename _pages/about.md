@@ -2,33 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Scientific Computing and Imaging Institute, University of Utah
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD researcher in Computer Science working on developing mathematical and algorithmic methods to understand and translate structure in complex, high-dimensional data into interpretable and actionable insights.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My work focuses on uncovering meaningful organization in data where standard approaches often fail to provide insight. A primary area of focus is understanding structure in learned representations in machine learning models—for example, I have studied graph neural network models for molecular data and shown that their embeddings capture chemically meaningful structure such as scaffolds and functional groups using topological methods, and developed interactive visualization tools to enable domain experts to explore and interpret these representations.
+
+
+My research draws on tools from topology, geometry, and algorithms to develop principled approaches for analyzing complex systems and uncovering structure that is not directly observable through conventional techniques. I apply these ideas across diverse domains, including cheminformatics, neuroinformatics and dynamic simulation data.
+
+
+I am interested in applying and extending these methods to challenging real-world problems, particularly in biological and biomedical domains where understanding the structure of data and models is critical for decision-making.
