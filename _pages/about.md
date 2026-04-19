@@ -20,7 +20,7 @@ My research draws on tools from topology, geometry, and algorithms to develop pr
 
 I am interested in applying and extending these methods to challenging real-world problems, particularly in biological and biomedical domains where understanding the structure of data and models is critical for decision-making.
 
-##Projects
+## Projects
 
 <div style="max-height: 900px; overflow-y: auto; padding-right: 12px;">
   {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
