@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
 
-social: true
+social: false
 ---
 
 I am a PhD researcher in Computer Science working on developing mathematical and algorithmic methods to understand and translate structure in complex, high-dimensional data into interpretable and actionable insights.
