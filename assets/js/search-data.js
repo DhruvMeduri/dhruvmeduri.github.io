@@ -19,6 +19,11 @@ ninja.data = [{
           description: "Robust simplification of Jacobi sets for clearer and more reliable feature tracking in time-varying scalar fields.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-2.html";
+            },},{id: "projects-sheaves-for-visual-encodings-and-visual-fusion",
+          title: 'Sheaves for Visual Encodings and Visual Fusion',
+          description: "A sheaf-theoretic foundation for constructing and analyzing coherent visual encodings and visual fusion.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project-3.html";
             },},{
         id: 'social-cv',
         title: 'CV',
