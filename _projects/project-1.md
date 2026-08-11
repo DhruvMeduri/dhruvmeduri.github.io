@@ -1,5 +1,5 @@
 ---
-title: Mapping Chemical Space
+title: "Mapping Chemical Space: Topological Data Analysis of Chemical Latent Space with Mapper"
 description: Visual exploration of chemical latent spaces through topological data analysis and deep learning.
 img: chemical-mapper.png
 importance: 3

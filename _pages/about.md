@@ -26,22 +26,28 @@ I am interested in applying and extending these methods to challenging real-worl
   {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
   {% for project in sorted_projects %}
     <div class="card mt-3 p-3">
-      <h3 class="card-title">{{ project.title }}</h3>
+      <div class="row align-items-start">
+        {% if project.img %}
+          <div class="col-md-4 mb-3 mb-md-0">
+            <img
+              src="{{ project.img | prepend: '/assets/img/' | relative_url }}"
+              alt="Visualization from {{ project.title }}"
+              style="width: 100%; height: auto; object-fit: contain;"
+            >
+          </div>
+        {% endif %}
 
-      {% if project.img %}
-        <img
-          src="{{ project.img | prepend: '/assets/img/' | relative_url }}"
-          alt="{{ project.title }}"
-          style="max-width: 100%; height: auto; margin-bottom: 1rem;"
-        >
-      {% endif %}
+        <div class="{% if project.img %}col-md-8{% else %}col-12{% endif %}">
+          <h3 class="card-title">{{ project.title }}</h3>
 
-      {% if project.description %}
-        <p>{{ project.description }}</p>
-      {% endif %}
+          {% if project.description %}
+            <p>{{ project.description }}</p>
+          {% endif %}
 
-      <div class="card-text">
-        {{ project.content }}
+          <div class="card-text">
+            {{ project.content }}
+          </div>
+        </div>
       </div>
     </div>
   {% endfor %}
