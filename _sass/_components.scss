@@ -53,6 +53,51 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Publication tiles
+
+.publication-list {
+  max-height: 1100px;
+  overflow-y: auto;
+  padding-right: 0.75rem;
+}
+
+.publication-tile {
+  min-height: 340px;
+  overflow: hidden;
+
+  .publication-thumbnail {
+    min-height: 340px;
+    background: #fff;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .publication-details {
+    padding: 1.5rem;
+  }
+
+  .publication-citation {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .publication-tile {
+    .publication-thumbnail {
+      height: 240px;
+      min-height: 240px;
+    }
+  }
+}
+
 // Profile
 
 .profile {

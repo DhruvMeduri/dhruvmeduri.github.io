@@ -20,25 +20,28 @@ My research draws on tools from topology, geometry, and algorithms to develop pr
 
 I am interested in applying and extending these methods to challenging real-world problems, particularly in biological and biomedical domains where understanding the structure of data and models is critical for decision-making.
 
-## Projects
+## Publications
 
-<div style="max-height: 900px; overflow-y: auto; padding-right: 12px;">
+<div class="publication-list">
   {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
   {% for project in sorted_projects %}
-    <div class="card mt-3 p-3">
-      <div class="row align-items-start">
+    <div class="card publication-tile mt-3">
+      <div class="row no-gutters h-100">
         {% if project.img %}
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-5 publication-thumbnail">
             <img
               src="{{ project.img | prepend: '/assets/img/' | relative_url }}"
               alt="Visualization from {{ project.title }}"
-              style="width: 100%; height: auto; object-fit: contain;"
             >
           </div>
         {% endif %}
 
-        <div class="{% if project.img %}col-md-8{% else %}col-12{% endif %}">
+        <div class="publication-details {% if project.img %}col-md-7{% else %}col-12{% endif %}">
           <h3 class="card-title">{{ project.title }}</h3>
+
+          {% if project.citation %}
+            <p class="publication-citation">{{ project.citation }}</p>
+          {% endif %}
 
           {% if project.description %}
             <p>{{ project.description }}</p>
