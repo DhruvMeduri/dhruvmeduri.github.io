@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "projects-mapping-chemical-space",
-          title: 'Mapping Chemical Space',
+  },{id: "projects-mapping-chemical-space-topological-data-analysis-of-chemical-latent-space-with-mapper",
+          title: 'Mapping Chemical Space: Topological Data Analysis of Chemical Latent Space with Mapper',
           description: "Visual exploration of chemical latent spaces through topological data analysis and deep learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-1.html";
