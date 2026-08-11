@@ -50,7 +50,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/dhruv-meduri", "_blank");
+          window.open("https://www.linkedin.com/in/dhruv-meduri-20bb4524b", "_blank");
         },
       },{
         id: 'social-rss',
