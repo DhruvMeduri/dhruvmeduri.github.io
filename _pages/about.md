@@ -28,7 +28,7 @@ I am interested in applying and extending these methods to challenging real-worl
     <div class="card publication-tile mt-3">
       <div class="row no-gutters h-100">
         {% if project.img %}
-          <div class="col-md-5 publication-thumbnail">
+          <div class="col-md-4 publication-thumbnail">
             <img
               src="{{ project.img | prepend: '/assets/img/' | relative_url }}"
               alt="Visualization from {{ project.title }}"
@@ -36,7 +36,7 @@ I am interested in applying and extending these methods to challenging real-worl
           </div>
         {% endif %}
 
-        <div class="publication-details {% if project.img %}col-md-7{% else %}col-12{% endif %}">
+        <div class="publication-details {% if project.img %}col-md-8{% else %}col-12{% endif %}">
           <h3 class="card-title">{{ project.title }}</h3>
 
           {% if project.citation %}

@@ -62,19 +62,22 @@ ul.task-list input[type="checkbox"] {
 }
 
 .publication-tile {
-  min-height: 340px;
   overflow: hidden;
 
   .publication-thumbnail {
-    min-height: 340px;
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem 0 1.25rem 1.25rem;
     background: #fff;
 
     img {
       width: 100%;
-      height: 100%;
+      max-height: 260px;
+      aspect-ratio: 4 / 3;
       display: block;
       object-fit: cover;
       object-position: center;
+      border-radius: 0.25rem;
     }
   }
 
@@ -92,8 +95,13 @@ ul.task-list input[type="checkbox"] {
 @media (max-width: 767.98px) {
   .publication-tile {
     .publication-thumbnail {
-      height: 240px;
-      min-height: 240px;
+      padding: 1rem 1rem 0;
+
+      img {
+        width: min(100%, 360px);
+        max-height: 220px;
+        margin: 0 auto;
+      }
     }
   }
 }
