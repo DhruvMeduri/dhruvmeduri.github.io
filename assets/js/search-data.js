@@ -14,6 +14,11 @@ ninja.data = [{
           description: "Visual exploration of chemical latent spaces through topological data analysis and deep learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/project-1.html";
+            },},{id: "projects-jacobi-set-simplification-for-tracking-topological-features-in-time-varying-scalar-fields",
+          title: 'Jacobi Set Simplification for Tracking Topological Features in Time-Varying Scalar Fields',
+          description: "Robust simplification of Jacobi sets for clearer and more reliable feature tracking in time-varying scalar fields.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/project-2.html";
             },},{
         id: 'social-cv',
         title: 'CV',
