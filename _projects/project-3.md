@@ -1,7 +1,7 @@
 ---
 title: "Sheaves for Visual Encodings and Visual Fusion"
 description: A sheaf-theoretic foundation for constructing and analyzing coherent visual encodings and visual fusion.
-img: sheaves-visual-fusion.png
+img: sheaves-full.png
 image_fit: contain
 importance: 1
 ---
