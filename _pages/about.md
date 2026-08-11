@@ -26,17 +26,18 @@ I am interested in applying and extending these methods to challenging real-worl
   {% assign sorted_projects = site.projects | sort: "importance" | reverse %}
   {% for project in sorted_projects %}
     <div class="card publication-tile mt-3">
-      <div class="row no-gutters h-100">
+      <div class="publication-tile-layout">
         {% if project.img %}
-          <div class="col-md-4 publication-thumbnail">
+          <div class="publication-thumbnail{% if project.image_layout == 'banner' %} publication-thumbnail-banner{% endif %}">
             <img
               src="{{ project.img | prepend: '/assets/img/' | relative_url }}"
               alt="Visualization from {{ project.title }}"
+              {% if project.image_fit == 'contain' %}class="publication-image-contain"{% endif %}
             >
           </div>
         {% endif %}
 
-        <div class="publication-details {% if project.img %}col-md-8{% else %}col-12{% endif %}">
+        <div class="publication-details">
           <h3 class="card-title">{{ project.title }}</h3>
 
           {% if project.citation %}

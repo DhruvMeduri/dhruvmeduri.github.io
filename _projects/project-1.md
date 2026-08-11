@@ -2,6 +2,7 @@
 title: "Mapping Chemical Space: Topological Data Analysis of Chemical Latent Space with Mapper"
 description: Visual exploration of chemical latent spaces through topological data analysis and deep learning.
 img: chemical-mapper.png
+image_layout: banner
 importance: 3
 citation: "Dhruv Meduri, Chuan-Shen Hu, Cong Shen, Kelin Xia, and Bei Wang. In 42nd International Symposium on Computational Geometry (SoCG 2026), LIPIcs, vol. 367, pp. 78:1–78:20. Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2026."
 ---
